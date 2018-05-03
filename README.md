@@ -9,8 +9,8 @@ Pour acceder cet interpréteur depuis le systeme host il faut lancer qemu avec l
 -monitor telnet:127.0.0.1:25 server,nowait</li>
 
 <li>Commande pour se connecter a l'interpreteur, utilser telnet ou netcat<br/>
-nc 127.0.0.1</li>
+nc 127.0.0.1 25</li>
 
 <li>Commande pour utiliser le fichier generer:<br/>
-nc 127.0.0.1 < fichier</li>
+nc 127.0.0.1 25 < fichier</li>
 <ul>
