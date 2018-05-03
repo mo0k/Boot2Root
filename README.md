@@ -4,7 +4,6 @@
 <h2>Script pour generer d'un fichier d'entrer pour l'interpreteur de commande de qemu afin de simuler une saisie clavier</h2>
 <p>Ce fichier doit être rediger dans l'entrée standard de l'interpréteur de commande de qemu<br/>
 Pour acceder cet interpréteur depuis le systeme host il faut lancer qemu avec l'option monitor telnet</p>
-<br/>
 <ul>
 <li>Option au lancement de la vm via qemu:<br/>
 -monitor telnet:127.0.0.1:25 server,nowait</li>
