@@ -1,6 +1,7 @@
 # Boot2Root
 <hr/>
-<h1>Script pour generer d'un fichier d'entrer pour l'interpreteur de commande de qemu afin de simuler une saisie clavier<h1/>
+<h1>Outils</h1>
+<h2>Script pour generer d'un fichier d'entrer pour l'interpreteur de commande de qemu afin de simuler une saisie clavier</h2>
 <p>Ce fichier est a rediger dans l'entree standard de l'interpeteur de commande de qemu<p/>
 <p>Pour acceder cet interpreteur depuis le system hote il faut lancer qemu avec l'option monitor telnet<p/>
 <br/>
