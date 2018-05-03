@@ -15,7 +15,16 @@ qemu_value = [ "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", \
 				"o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", \
 				"space", "backslash", "kp_enter" ]
 
+#Sortie standard rediriger dans fichier
 sys.stdout = output
 for c in commandline:
-	print("sendkey " + qemu_value[characters.index(c)] + "\n")
+	try:
+		characters.index(c)
+	except Exception as e:
+		sys.stdout = sys.__stdout__
+		print("characteres non valide:" + c)
+		sys.exit(1)
+	else:
+		print("sendkey " + qemu_value[characters.index(c)] + "\n")
+#Retablir la sortie standard par default
 sys.stdout = sys.__stdout__
